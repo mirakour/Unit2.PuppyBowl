@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy 🐶 Bowl </title>
     <link rel="stylesheet" href="styles.css" />
-    <title>PuppyBowl</title>
   </head>
   <body>
-    <form id="new-player-form"></form>
-    <main></main>
-    <script src="./script.js"></script>
+    <header>
+      <h1>🏈🐾 Puppy Bowl Roster</h1>
+    </header>
+
+    <main>
+      <!-- Player cards will be rendered here dynamically -->
+    </main>
+
+    <section class="form-section">
+      <h2>Add a New Puppy Player</h2>
+      <form id="new-player-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="breed">Breed</label>
+          <input id="breed" name="breed" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="bench">Bench</option>
+            <option value="field">Field</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="imageUrl">Image URL</label>
+          <input id="imageUrl" name="imageUrl" type="url" required />
+        </div>
+
+        <button type="submit">Add Player</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
